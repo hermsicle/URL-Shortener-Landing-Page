@@ -67,6 +67,10 @@ function Shorten() {
                             onChange={ handleChange}
                         />
 
+                        {
+                            redInput ? <p className='error-message'>Please add a link</p> : ''
+                        }
+
                         <button 
                             id='shorten-btn'
                         >

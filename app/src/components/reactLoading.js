@@ -7,7 +7,7 @@ function Loading(props) {
     return (
     promiseInProgress && (
     <div className="loader">
-        <ReactLoading type="cylon" color='lime' height={50} width={50} />
+        <ReactLoading type="bubbles" color='lime' height={50} width={50} />
     </div>
     )
 );
