@@ -1,0 +1,123 @@
+/* Hero Section */
+.hero-section {
+    /* border: var(--border); */
+    padding: 0 22px;
+    max-width: 1110px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.hero-image {
+    /* border: var(--border); */
+    height: 330px;
+    position: absolute;
+    top: 23px;
+    right: -150px;
+}
+.hero-title-section {
+    max-width: 400px;
+    /* border: var(--border); */
+    margin: 0 auto;
+}
+.hero-section h1 {
+    /* border: var(--border); */
+    font-size: 2.5rem;
+    margin: 400px 0 0 0;
+}
+.hero-section h2 {
+    color: var(--gray);
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+.hero-section button {
+    width: 196px;
+    height: 56px;
+    margin: 0 auto 168px auto;
+    border: none;
+    background: var(--cyan);
+    color: #fff;
+    border-radius: 2rem;
+    font-size: 18px;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+}
+.hero-section button:hover {
+    background: var(--light-cyan);
+}
+
+@media (min-width: 474px) {
+    .hero-image {
+        height: 380px;
+    }
+    .hero-title-section {
+        max-width: 500px;
+    }
+    .hero-section h1 {
+        margin: 450px 0 0 0;
+    }
+}
+@media (min-width: 570px ) {
+    .hero-image {
+        height: 420px;
+    }
+}
+@media (min-width: 650px ) {
+    .hero-image {
+        height: 450px;
+    }
+    .hero-section h1 {
+        margin: 500px 0 0 0;
+    }
+}
+@media (min-width: 800px ) {
+    .hero-image {
+        height: 500px;
+    }
+    .hero-section h1 {
+        margin: 580px 0 0 0;
+        font-size: 3rem;
+    }
+}
+@media (min-width: 930px ) {
+    .hero-image {
+        height: 560px;
+    }
+    .hero-section h1 {
+        margin: 650px 0 0 0;
+        font-size: 3rem;
+    }
+}
+@media (min-width: 1100px) {
+    .hero-section {
+        padding: 0;
+        overflow: visible;
+        height: 710px;
+    }
+    .hero-image {
+        right: -280px;
+    }
+    .hero-section h1 {
+        margin: 145px 0 0 0;
+        font-size: 4rem;
+        /* border: var(--border); */
+    }
+    .hero-section h2 {
+        margin-bottom: 4rem;
+        /* border: var(--border); */
+    }
+    .hero-title-section {
+        margin-right: 100%;
+        width: 500px;
+        text-align: left;
+    }
+}
+/* @media (min-width: 1440px) {
+    .hero-section {
+        overflow: visible;
+    }
+} */

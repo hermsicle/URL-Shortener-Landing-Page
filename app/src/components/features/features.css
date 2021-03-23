@@ -1,0 +1,122 @@
+
+/* Ffeatures container */
+.features-container {
+    background: rgb(236, 236, 236);
+    /* height: 100vh; */
+    /* top: -160px; */
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+}
+.features-title {
+    /* border: var(--border); */
+    margin-top: 160px;
+    margin-bottom: 90px;
+}
+.features-title h2 {
+    color: var(--very-dark-violet);
+    margin-bottom: 1rem;
+}
+.features-title p {
+    color: var(--grayish-violet);
+    /* color: var(--very-dark-blue); */
+    /* border: var(--border); */
+    width: 80%;
+    margin: 0 auto;
+}
+
+.feature-card {
+    width: 328px;
+    height: 285px;
+    background: #fff;
+    /* border: var(--border); */
+    border-radius: 0.5rem;
+    margin: 0 auto;
+    position: relative;
+}
+.feature-img-container {
+    position: absolute;
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    background-color: var(--dark-violet);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -42px;
+}
+.feature-card h2 {
+    /* border: var(--border); */
+    /* margin-top: 70px; */
+    margin-bottom: 1.5rem;
+    color: var(--very-dark-violet);
+    padding-top: 70px;
+}
+.feature-card p {
+    color: var(--grayish-violet);
+    /* border: var(--border); */
+    width: 85%;
+    margin: 0 auto;
+    line-height: 1.5; 
+}
+
+.feature-card.one,
+.feature-card.two,
+.feature-card.three {
+    margin-bottom: 92px;
+}
+
+.feature-card.one::after,
+.feature-card.two::after {
+    content: '';
+    height: 50px;
+    width: 8px;
+    background: var(--cyan);
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+@media (min-width: 1100px) {
+    .features-title h2{
+        font-size: 2.5rem;
+    }
+    .features-title p {
+        width: 50%;
+    }
+    .feature-cards {
+        /* border: var(--border2); */
+        display: flex;
+        justify-content: space-between;
+        width: 1110px;
+        margin: 0 auto;
+    }
+    .feature-card {
+        margin: 0;
+    }
+    .feature-card.two {
+        margin-top: 50px;
+    }
+    .feature-card.three {
+        margin-top: 100px;
+        margin-bottom: 120px;
+    }
+    .feature-card.one::after {
+        transform: rotate(90deg);
+        right: -390px;
+        height: 63px;
+        top: 130px;
+    }
+    .feature-card.two::after {
+        transform: rotate(90deg);
+        right: -390px;
+        height: 63px;
+        top: 80px;
+    }
+}

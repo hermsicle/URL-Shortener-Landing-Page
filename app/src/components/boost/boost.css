@@ -1,0 +1,65 @@
+
+/* Boost Section */
+.boost-section {
+    position: relative;
+    /* top: -160px; */
+    height: 300px;
+    width: 100%;
+    background: var(--dark-violet);
+    display: flex;
+    text-align:center;
+    align-items: center;
+}
+.boost-mobile {
+    position: absolute;
+    background: url('../../images/bg-boost-mobile.svg');
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 375px;
+    z-index: 1;
+    right: 0;
+}
+.boost-inner {
+    /* border: var(--border); */
+    margin: 0 auto;
+    z-index: 2;
+}
+.boost-inner h2 {
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.boost-inner button {
+    cursor: pointer;
+    background: var(--cyan);
+    color: #fff;
+    border: none;
+    outline: none;
+    height: 58px;
+    width: 198px;
+    font-size: 1.25rem;
+    border-radius: 2rem;
+    font-weight: 700;
+}
+.boost-inner button:hover {
+    background: var(--light-cyan);
+}
+@media (min-width: 1100px) {
+    .boost-section {
+        height: 270px;
+    }
+    .boost-mobile {
+        background: url('../../images/bg-boost-desktop.svg');
+        height: 270px;
+        width: 100%;
+        background-repeat: no-repeat;
+        right: 0;
+        background-size: cover;
+        left: 0;
+        margin: 0 auto;
+    }
+    .boost-section h2 {
+    font-size: 2.5rem;
+    }
+}

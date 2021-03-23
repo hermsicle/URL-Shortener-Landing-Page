@@ -1,0 +1,130 @@
+/* Shorten Section */
+.shorten-outer-container {
+    position: relative;
+    /* border: var(--border2); */
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.shorten-section {
+    height: 160px;
+    /* width: 326px; */
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    position: absolute;
+    background: var(--dark-violet);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    top: -80px;
+    z-index: 1;
+    left: 0;
+    right: 0;
+}
+.shorten-section-bg {
+    background: url('../../images/bg-shorten-mobile.svg');
+    border-top-right-radius: 0.5rem;
+    background-size: cover;
+    position: absolute;
+    height: 128px;
+    width: 237px;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+}
+.form {
+    /* border: var(--border3); */
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+.user-input,
+#shorten-btn {
+    height: 50px;
+    width: 285px;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+#shorten-btn:hover {
+    background: var(--light-cyan);
+}
+.user-input {
+    margin: 0 auto 1rem auto;
+    padding-left: 18px;
+    font-size: 18px;
+    color: var(--gray);
+    font-family: 'Poppins', sans-serif;
+    z-index: 2;
+    border: var(--border3);
+    width: 85%;
+} 
+.user-input.active {
+    border: 3px solid var(--red);
+    margin: 0 auto 1rem auto;
+    padding-left: 18px;
+    font-size: 18px;
+    color: var(--gray);
+    font-family: 'Poppins', sans-serif;
+    z-index: 2;
+    width: 85%;
+}
+
+
+
+.user-input.active::placeholder {
+    color: rgba(255, 0, 0, 0.361);
+}
+
+#shorten-btn {
+    margin: 0 auto;
+    background: var(--cyan);
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.loader {
+    /* border: 5px solid black; */
+    width: 100px;
+    margin: 0 auto;
+    height: 50px;
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+}
+
+@media (min-width: 1100px) {
+    .shorten-section {
+        width: 1110px;
+        flex-direction: row;
+        align-items: center;
+        overflow: hidden;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .form {
+        flex-direction: row;
+    }
+    .user-input {
+        width: 775px;
+        margin: 0;
+    }
+    #shorten-btn {
+        width: 190px;
+        margin: 0 0 0 25px;
+    }
+    .shorten-section-bg {
+        background: url('../../images/bg-shorten-desktop.svg');
+        height: 168px;
+        width: 1110px;
+    }
+    .loader {
+        bottom: 0px;
+    }
+}
